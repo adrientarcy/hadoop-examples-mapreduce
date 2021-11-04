@@ -23,7 +23,7 @@ public class District_Trees {
         Job job = Job.getInstance(conf, "district_trees");
         job.setJarByClass(District_Trees.class);
         job.setMapperClass(DistrictTreesMapper.class);
-
+        job.setCombinerClass(IntSumReducer.class);
         job.setReducerClass(IntSumReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
