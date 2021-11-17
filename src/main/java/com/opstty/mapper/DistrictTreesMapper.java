@@ -11,7 +11,7 @@ public class DistrictTreesMapper extends Mapper<Object, Text, Text, IntWritable>
 
     public void map(Object key, Text value, Mapper.Context context) throws IOException, InterruptedException{
         if(line !=0){
-            context.write(new Text(value.toString().split(";")[1]), new IntWritable(1));
+            context.write(new Text(value.toString().split(";")[1]), "");
         }
 
         line++;
