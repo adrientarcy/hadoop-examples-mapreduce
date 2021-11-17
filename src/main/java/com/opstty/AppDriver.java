@@ -25,7 +25,7 @@ public class AppDriver {
             programDriver.addClass("height_species_max", MaximumHeightBySpecies.class,
                     "A map/reduce program that lists the max height of trees by kind");
 
-            programDriver.addClass("sortTree", SortSmallestLargest.class,
+            programDriver.addClass("sort_tree", SortSmallestLargest.class,
                     "A map/reduce program that sorts all the trees from smallest to tallest");
 
             programDriver.addClass("oldest_tree_district", OldestTreeDistrict.class,
